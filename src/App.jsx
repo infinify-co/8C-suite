@@ -9,8 +9,8 @@ import {
   Plus,
   Check,
   X,
-  DollarSign,
-  Clock3,
+  Library,
+  Globe,
   LayoutDashboard,
   Users,
   FileText,
@@ -18,7 +18,8 @@ import {
   User,
   Settings,
   Bell,
-  LogOut
+  LogOut,
+  CalendarDays
 } from 'lucide-react'
 import './index.css'
 
@@ -325,10 +326,13 @@ function App() {
           <LayoutDashboard size={20} className="sidebar-icon" />
         </a>
         <a href="#" className="sidebar-item" data-tooltip="Expense">
-          <DollarSign size={20} className="sidebar-icon" />
+          <Library size={20} className="sidebar-icon" />
         </a>
-        <a href="#" className="sidebar-item" data-tooltip="Timesheet">
-          <Clock3 size={20} className="sidebar-icon" />
+        <a href="#" className="sidebar-item" data-tooltip="Global">
+          <Globe size={20} className="sidebar-icon" />
+        </a>
+        <a href="#" className="sidebar-item" data-tooltip="Schedule">
+          <CalendarDays size={20} className="sidebar-icon" />
         </a>
         
         <div className="sidebar-divider"></div>

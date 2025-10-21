@@ -13,11 +13,17 @@ body {
   background: linear-gradient(135deg, #3f3f3f 0%, #4a4a4a 50%, #5a5a5a 100%);
   min-height: 100vh;
   overflow-x: hidden;
+  background-attachment: fixed;
+}
+
+html {
+  background: #3f3f3f;
 }
 
 #root {
   min-height: 100vh;
   position: relative;
+  background: #3f3f3f;
 }
 
 /* Background blur effect */
@@ -699,7 +705,7 @@ body {
   align-items: center;
   gap: 16px;
   padding: 24px 0;
-  overflow-y: auto;
+  overflow: visible;
   z-index: 1000;
 }
 
@@ -735,15 +741,16 @@ body {
   left: 70px;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.9);
   color: white;
   padding: 8px 12px;
   border-radius: 8px;
   font-size: 12px;
   font-weight: 500;
   white-space: nowrap;
-  z-index: 1001;
+  z-index: 1002;
   animation: tooltipFadeIn 0.2s ease;
+  pointer-events: none;
 }
 
 .sidebar-item:hover::before {
@@ -753,8 +760,8 @@ body {
   top: 50%;
   transform: translateY(-50%);
   border: 6px solid transparent;
-  border-right-color: rgba(0, 0, 0, 0.8);
-  z-index: 1001;
+  border-right-color: rgba(0, 0, 0, 0.9);
+  z-index: 1002;
 }
 
 @keyframes tooltipFadeIn {
