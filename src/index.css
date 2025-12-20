@@ -10,20 +10,20 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(135deg, #3f3f3f 0%, #4a4a4a 50%, #5a5a5a 100%);
+  background: white;
   min-height: 100vh;
   overflow-x: hidden;
   background-attachment: fixed;
 }
 
 html {
-  background: #3f3f3f;
+  background: white;
 }
 
 #root {
   min-height: 100vh;
   position: relative;
-  background: #3f3f3f;
+  background: white;
 }
 
 /* Background blur effect */
@@ -49,12 +49,10 @@ html {
 
 /* Glassmorphism effect */
 .glass-card {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
   border-radius: 16px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 /* Main layout */
@@ -72,6 +70,9 @@ html {
   align-items: center;
   margin-bottom: 32px;
   padding: 0 8px;
+  background: #6b7280;
+  padding: 16px 24px;
+  border-radius: 12px;
 }
 
 .welcome-section h1 {
@@ -695,10 +696,8 @@ html {
   top: 0;
   bottom: 0;
   width: 80px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  background: #f3f4f6;
+  border-right: 1px solid #e5e7eb;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -717,7 +716,7 @@ html {
   border-radius: 12px;
   cursor: pointer;
   transition: all 0.3s ease;
-  color: rgba(255, 255, 255, 0.7);
+  color: #6b7280;
   text-decoration: none;
   width: 56px;
   height: 56px;
@@ -725,13 +724,13 @@ html {
 }
 
 .sidebar-item.active {
-  background: rgba(255, 255, 255, 0.2);
-  color: white;
+  background: #e5e7eb;
+  color: #1f2937;
 }
 
 .sidebar-item:hover {
-  background: rgba(255, 255, 255, 0.15);
-  color: white;
+  background: #e5e7eb;
+  color: #1f2937;
   transform: translateX(8px);
 }
 
@@ -782,7 +781,7 @@ html {
 .sidebar-divider {
   width: 40px;
   height: 1px;
-  background: rgba(255, 255, 255, 0.2);
+  background: #d1d5db;
   margin: 8px 0;
 }
 

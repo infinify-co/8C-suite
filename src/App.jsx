@@ -13,7 +13,7 @@ import {
   Globe,
   LayoutDashboard,
   Users,
-  FileText,
+  Wallet,
   BarChart3,
   User,
   Settings,
@@ -325,26 +325,23 @@ function App() {
         <a href="#" className="sidebar-item active" data-tooltip="Dashboard">
           <LayoutDashboard size={20} className="sidebar-icon" />
         </a>
-        <a href="#" className="sidebar-item" data-tooltip="Expense">
-          <Library size={20} className="sidebar-icon" />
-        </a>
-        <a href="#" className="sidebar-item" data-tooltip="Global">
+        <a href="/global-search.html" className="sidebar-item" data-tooltip="Global">
           <Globe size={20} className="sidebar-icon" />
         </a>
-        <a href="#" className="sidebar-item" data-tooltip="Schedule">
-          <CalendarDays size={20} className="sidebar-icon" />
+        <a href="/analytics.html" className="sidebar-item" data-tooltip="Analytics">
+          <BarChart3 size={20} className="sidebar-icon" />
         </a>
         
         <div className="sidebar-divider"></div>
         
-        <a href="#" className="sidebar-item" data-tooltip="Team">
-          <Users size={20} className="sidebar-icon" />
+        <a href="#" className="sidebar-item" data-tooltip="Schedule">
+          <CalendarDays size={20} className="sidebar-icon" />
         </a>
-        <a href="#" className="sidebar-item" data-tooltip="Reports">
-          <BarChart3 size={20} className="sidebar-icon" />
+        <a href="/wallet.html" className="sidebar-item" data-tooltip="Wallet">
+          <Wallet size={20} className="sidebar-icon" />
         </a>
-        <a href="#" className="sidebar-item" data-tooltip="Documents">
-          <FileText size={20} className="sidebar-icon" />
+        <a href="/campaigns.html" className="sidebar-item" data-tooltip="Campaigns">
+          <Library size={20} className="sidebar-icon" />
         </a>
       </nav>
     </div>
